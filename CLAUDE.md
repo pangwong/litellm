@@ -181,3 +181,74 @@ Key workflows to be aware of:
 - Optional dependencies in `[tool.poetry.extras]`: `proxy`, `caching`, `semantic-router`, `mlflow`, etc.
 - Development dependencies in `[tool.poetry.group.dev.dependencies]`
 - Pin OpenAI version to `1.99.5` in CI environments for stability
+
+## Local Development Workflow
+
+### Quick Development Setup (`dev-scripts/`)
+For rapid iteration without Docker builds:
+
+**One-time setup:**
+```bash
+make install-proxy-dev
+poetry run prisma generate
+./dev-scripts/start-db.sh  # Starts PostgreSQL container
+```
+
+**Daily development:**
+```bash
+./dev-scripts/start-backend.sh  # Restart after code changes
+# Or with custom config:
+./dev-scripts/start-backend.sh --config /path/to/config.yaml
+```
+
+### Development Scripts
+- `start-db.sh` - Start PostgreSQL database (run once, stays running)
+- `stop-db.sh` - Stop database (data preserved)
+- `reset-db.sh` - Delete all data and start fresh
+- `start-backend.sh` - Start proxy server only (most used for development)
+- `start-full-dev.sh` - Start backend + frontend dev server (for UI work)
+- `build-ui.sh` - Build UI for production (Next.js in `litellm/proxy/_experimental/`)
+- `verify-setup.sh` - Validate environment and dependencies
+- `setup.sh` - Interactive first-time setup wizard
+
+### Environment Variables for Development
+```bash
+export DATABASE_URL="postgresql://llmproxy:dbpassword9090@localhost:5432/litellm"
+export STORE_MODEL_IN_DB="True"  # Enable UI model management
+export LITELLM_MODE="DEV"
+export LITELLM_LOG_LEVEL="DEBUG"
+```
+
+**Important:** Always run `poetry run prisma generate` after installing dependencies or updating schema.
+
+### UI Development
+- Frontend source: `litellm/proxy/_experimental/` (Next.js app)
+- Built output: `litellm/proxy/_experimental/out/` (served by FastAPI)
+- Development mode: `cd litellm/proxy/_experimental && npm run dev` (port 3000)
+- Production build: `./dev-scripts/build-ui.sh`
+- Backend serves UI from `/out` directory at runtime
+
+## StepFlow Provider Implementation
+
+The StepFlow provider (`litellm/llms/stepflow/`) demonstrates workflow-based LLM gateway patterns:
+
+### Architecture
+- **Workflow Integration**: Routes requests through StepFlow workflow platform
+- **Buffered Streaming**: Handles workflow platform's buffered SSE response format
+- **Custom Stream Wrapper**: `StepFlowCustomStreamWrapper` in `chat/transformation.py`
+  - Parses complete SSE streams from buffered workflow responses
+  - Prevents duplicate emissions with `_content_emitted` state flag
+  - Consolidates multiple workflow events into single response
+
+### Key Implementation Details
+- Models format: `stepflow/provider-model-name` (e.g., `stepflow/gpt-4o`, `stepflow/claude-haiku-4-5-20251001`)
+- Environment variables: `STEPFLOW_API_BASE`, `STEPFLOW_API_KEY`
+- Supports 11+ providers through unified workflow interface
+- Test suite: `tests/llm_translation/test_stepflow/`
+- Testing script: `dev-scripts/test-all-models.py` validates model compatibility
+
+### Workflow Platform Behavior
+- Platform buffers entire LLM response before returning as SSE stream
+- Not true real-time streaming - response is collected first, then streamed
+- Multiple SSE events may contain same buffered response
+- Custom wrapper handles deduplication and content extraction
