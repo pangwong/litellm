@@ -8,82 +8,176 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `make install-dev` - Install core development dependencies
 - `make install-proxy-dev` - Install proxy development dependencies with full feature set
 - `make install-test-deps` - Install all test dependencies
+- `make install-dev-ci` - Install dev dependencies (CI-compatible, pins OpenAI version)
+- `make install-proxy-dev-ci` - Install proxy dev dependencies (CI-compatible)
 
 ### Testing
 - `make test` - Run all tests
 - `make test-unit` - Run unit tests (tests/test_litellm) with 4 parallel workers
 - `make test-integration` - Run integration tests (excludes unit tests)
+- `make test-unit-helm` - Run helm unit tests
+- `make test-llm-translation` - Run all LLM provider translation tests
+- `make test-llm-translation-single FILE=test_filename.py` - Run specific provider test
 - `pytest tests/` - Direct pytest execution
+- `poetry run pytest tests/path/to/test_file.py -v` - Run specific test file
+- `poetry run pytest tests/path/to/test_file.py::test_function -v` - Run specific test
 
 ### Code Quality
 - `make lint` - Run all linting (Ruff, MyPy, Black, circular imports, import safety)
 - `make format` - Apply Black code formatting
+- `make format-check` - Check Black code formatting without modifying (matches CI)
 - `make lint-ruff` - Run Ruff linting only
 - `make lint-mypy` - Run MyPy type checking only
-
-### Single Test Files
-- `poetry run pytest tests/path/to/test_file.py -v` - Run specific test file
-- `poetry run pytest tests/path/to/test_file.py::test_function -v` - Run specific test
+- `make lint-black` - Check Black formatting (matches CI)
+- `make check-circular-imports` - Check for circular imports
+- `make check-import-safety` - Check import safety
 
 ## Architecture Overview
 
 LiteLLM is a unified interface for 100+ LLM providers with two main components:
 
 ### Core Library (`litellm/`)
-- **Main entry point**: `litellm/main.py` - Contains core completion() function
-- **Provider implementations**: `litellm/llms/` - Each provider has its own subdirectory
-- **Router system**: `litellm/router.py` + `litellm/router_utils/` - Load balancing and fallback logic
-- **Type definitions**: `litellm/types/` - Pydantic models and type hints
-- **Integrations**: `litellm/integrations/` - Third-party observability, caching, logging
-- **Caching**: `litellm/caching/` - Multiple cache backends (Redis, in-memory, S3, etc.)
+- **Main entry point**: `litellm/main.py` - Contains core completion() function (6,458 lines)
+- **Router system**: `litellm/router.py` (7,753 lines) + `litellm/router_utils/` - Load balancing and fallback logic
+- **Provider implementations**: `litellm/llms/` - 98 provider subdirectories, each with their own implementation
+- **Base provider classes**: `litellm/llms/base_llm/` - Base classes for chat, completion, embedding, image generation, etc.
+- **Type definitions**: `litellm/types/` - Pydantic v2 models and type hints
+- **Integrations**: `litellm/integrations/` - 22+ third-party observability, caching, logging integrations
+- **Caching**: `litellm/caching/` - Multiple cache backends (Redis, in-memory, S3, Azure Blob, GCS, disk, etc.)
+- **Cost calculation**: `litellm/cost_calculator.py` - Token counting and cost tracking
+- **Exception handling**: `litellm/exceptions.py` + `litellm/litellm_core_utils/exception_mapping_utils.py` - Provider error mapping to OpenAI format
+- **Logging**: `litellm/_logging.py` + `litellm/litellm_core_utils/litellm_logging.py` - Comprehensive logging infrastructure
 
 ### Proxy Server (`litellm/proxy/`)
 - **Main server**: `proxy_server.py` - FastAPI application
+- **Request routing**: `route_llm_request.py` - Core request processing logic
 - **Authentication**: `auth/` - API key management, JWT, OAuth2
 - **Database**: `db/` - Prisma ORM with PostgreSQL/SQLite support
-- **Management endpoints**: `management_endpoints/` - Admin APIs for keys, teams, models
+- **Management endpoints**: `management_endpoints/` - Admin APIs for keys, teams, models, users
 - **Pass-through endpoints**: `pass_through_endpoints/` - Provider-specific API forwarding
 - **Guardrails**: `guardrails/` - Safety and content filtering hooks
+- **Hooks system**: `hooks/` - Custom hooks for request/response processing
 - **UI Dashboard**: Served from `_experimental/out/` (Next.js build)
+
+### Router Strategies (`litellm/router_strategy/`)
+Available routing algorithms for load balancing:
+- `lowest_cost.py` - Minimize API spend
+- `lowest_latency.py` - Optimize for speed based on historical latency
+- `least_busy.py` - Balance load across deployments
+- `lowest_tpm_rpm.py` / `lowest_tpm_rpm_v2.py` - Respect rate limits (tokens/requests per minute)
+- `simple_shuffle.py` - Round-robin distribution
+- `tag_based_routing.py` - Route by custom tags
+- `budget_limiter.py` - Enforce budget constraints
 
 ## Key Patterns
 
 ### Provider Implementation
-- Providers inherit from base classes in `litellm/llms/base.py`
-- Each provider has transformation functions for input/output formatting
-- Support both sync and async operations
-- Handle streaming responses and function calling
+Each provider in `litellm/llms/<provider>/` typically has:
+- `__init__.py` - Main completion/embedding/image_generation functions
+- `transformation.py` - Input/output format transformations to/from OpenAI format
+- `common_utils.py` - Provider-specific utilities
+- Base classes inherited from `litellm/llms/base_llm/`
+- Support for both sync and async operations
+- Streaming response handling
+- Function calling support where applicable
+
+### Model Name Format
+Models use the format `provider/model-name`:
+- `openai/gpt-4` - OpenAI GPT-4
+- `anthropic/claude-sonnet-4-20250514` - Anthropic Claude
+- `azure/gpt-4` - Azure OpenAI
+- `bedrock/anthropic.claude-v2` - AWS Bedrock
 
 ### Error Handling
-- Provider-specific exceptions mapped to OpenAI-compatible errors
-- Fallback logic handled by Router system
-- Comprehensive logging through `litellm/_logging.py`
+- Provider-specific exceptions mapped to OpenAI-compatible errors in `litellm/exceptions.py`
+- Standard exception types: `AuthenticationError`, `RateLimitError`, `TimeoutError`, `BadRequestError`, etc.
+- Fallback logic handled by Router system with configurable retry strategies
+- Comprehensive logging through `litellm/_logging.py` and integration callbacks
 
 ### Configuration
-- YAML config files for proxy server (see `proxy/example_config_yaml/`)
-- Environment variables for API keys and settings
-- Database schema managed via Prisma (`proxy/schema.prisma`)
+- **Proxy server**: YAML config files (see `proxy/example_config_yaml/` for templates)
+- **Environment variables**: API keys and settings (e.g., `OPENAI_API_KEY`, `LITELLM_MODE`, `LITELLM_LOG_LEVEL`)
+- **Database schema**: Managed via Prisma (`proxy/schema.prisma`)
+- **Router config**: Defined in YAML with model_list, routing_strategy, fallback_strategy
+
+### Custom Callbacks & Logging
+Use `CustomLogger` interface in `litellm/integrations/custom_logger.py`:
+```python
+from litellm.integrations.custom_logger import CustomLogger
+
+class MyLogger(CustomLogger):
+    def log_pre_api_call(self, model, messages, kwargs): pass
+    def log_post_api_call(self, kwargs, response, start_time, end_time): pass
+    def log_stream_event(self, kwargs, response, start_time, end_time): pass
+    def log_success_event(self, kwargs, response, start_time, end_time): pass
+    def log_failure_event(self, kwargs, response, start_time, end_time): pass
+
+litellm.callbacks = [MyLogger()]
+```
 
 ## Development Notes
 
 ### Code Style
-- Uses Black formatter, Ruff linter, MyPy type checker
+- Uses Black formatter (configured in `pyproject.toml`)
+- Ruff linter (configured in `ruff.toml`)
+- MyPy type checker with `--ignore-missing-imports`
 - Pydantic v2 for data validation
 - Async/await patterns throughout
 - Type hints required for all public APIs
+- Python 3.8.1+ minimum version
 
 ### Testing Strategy
-- Unit tests in `tests/test_litellm/`
-- Integration tests for each provider in `tests/llm_translation/`
-- Proxy tests in `tests/proxy_unit_tests/`
-- Load tests in `tests/load_tests/`
+- **Unit tests**: `tests/test_litellm/` (~15,000 tests) - Run with 4 parallel workers
+- **Provider translation tests**: `tests/llm_translation/test_<provider>/` - One directory per provider
+- **Proxy tests**: `tests/proxy_unit_tests/` - FastAPI endpoint testing
+- **Router tests**: `tests/router_unit_tests/` - Load balancing and fallback logic
+- **Security tests**: `tests/proxy_security_tests/` - Authentication and authorization
+- **Load tests**: `tests/load_tests/` - Performance and stress testing
+- **Integration tests**: `tests/logging_callback_tests/`, `tests/guardrails_tests/`, etc.
+- **Documentation tests**: `tests/documentation_tests/` - Circular import checks, import safety
+
+### Adding a New Provider
+1. Create directory: `litellm/llms/your_provider/`
+2. Implement `__init__.py` with completion/embedding/image_generation functions
+3. Add `transformation.py` for input/output format conversion
+4. Register provider in `litellm/litellm_core_utils/get_llm_provider_logic.py`
+5. Add provider-specific types in `litellm/types/llms/`
+6. Create tests in `tests/llm_translation/test_your_provider/`
+7. Update `litellm/constants.py` if needed for model lists or defaults
 
 ### Database Migrations
-- Prisma handles schema migrations
+- Prisma handles schema migrations automatically
+- Schema defined in `litellm/proxy/schema.prisma`
 - Migration files auto-generated with `prisma migrate dev`
 - Always test migrations against both PostgreSQL and SQLite
+- Migrations published via `publish-migrations.yml` workflow
 
 ### Enterprise Features
 - Enterprise-specific code in `enterprise/` directory
 - Optional features enabled via environment variables
 - Separate licensing and authentication for enterprise features
+- Enterprise package installed separately: `cd enterprise && poetry run pip install -e .`
+
+### CI/CD Workflows (`.github/workflows/`)
+Key workflows to be aware of:
+- `main.yml` - PR tests and lint checks
+- `test-linting.yml` - Code quality checks (must pass)
+- `llm-translation-testing.yml` - Provider translation tests
+- `load_test.yml` - Performance testing
+- `ghcr_deploy.yml` - Docker image builds
+- `publish-migrations.yml` - Database migration publishing
+- `auto_update_price_and_context_window.yml` - Model metadata updates
+
+### Important Configuration Files
+- `pyproject.toml` - Poetry dependencies and package config (extras: proxy, caching, semantic-router, mlflow)
+- `ruff.toml` - Ruff linting configuration
+- `Makefile` - Common development commands
+- `litellm/constants.py` - Runtime configuration constants, feature flags, model lists
+- `.github/workflows/` - CI/CD pipeline definitions
+
+### Package Management
+- Uses Poetry for dependency management
+- Core dependencies in main dependencies section
+- Optional dependencies in `[tool.poetry.extras]`: `proxy`, `caching`, `semantic-router`, `mlflow`, etc.
+- Development dependencies in `[tool.poetry.group.dev.dependencies]`
+- Pin OpenAI version to `1.99.5` in CI environments for stability

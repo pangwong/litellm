@@ -1,0 +1,4 @@
+Usage: litellm-proxy [OPTIONS] COMMAND [ARGS]...
+Try 'litellm-proxy --help' for help.
+
+Error: No such option: --config

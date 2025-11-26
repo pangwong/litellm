@@ -1,0 +1,310 @@
+ Alibaba (Qwen): 48 models
+     ----------------------------------------------------------------------------------------------------
+       qwen3-max-preview                                                      (2025-11-06)
+       ccr/qwen3-vl-235b-a22b-instruct                                        (2025-10-17)
+       ccr/qwen3-vl-235b-a22b-thinking                                        (2025-10-17)
+       qwen3-235b-a22b-thinking-2507                                          (2025-10-11)
+       qwen3-vl-30b-a3b-instruct                                              (2025-10-04)
+       tongyi-deepresearch-30b-a3b                                            (2025-09-24)
+       qwen3-vl-235b-a22b-instruct                                            (2025-09-24)
+       qwen3-vl-235b-a22b-thinking                                            (2025-09-24)
+       qwen3-max                                                              (2025-09-06)
+       qwen3-coder-flash                                                      (2025-08-01)
+       qwen3-coder-plus                                                       (2025-07-23)
+       qwen3-235b-a22b-instruct-2507                                          (2025-07-12)
+       qwen2.5-vl-72b-instruct-ali                                            (2025-05-29)
+       qvq-max-ali                                                            (2025-04-02)
+       qwen2.5-vl-72b-instruct                                                (2025-03-18)
+       qwen-max-2025-01-25                                                    (2025-02-07)
+       qwen2.5-math-72b-instruct                                              (2024-09-19)
+       qwen-coder-turbo-2024-09-19                                            (2024-09-19)
+       qwen2.5-coder-7b-instruct                                              (2024-09-19)
+       qwen2.5-72b-instruct                                                   (2024-09-19)
+       Qwen2-VL-72B                                                           (2024-09-03)
+       qwen-vl-max                                                            (2024-08-12)
+       qwen-omni-turbo-latest                                                 (2024-05-01)
+       qwen2.5-vl-32b-instruct                                                (2024-05-01)
+       qwen-web                                                               (2024-05-01)
+       qvq-max-latest                                                         (2024-05-01)
+       qwen-omni-turbo                                                        (2024-05-01)
+       qwen2.5-omni-7b                                                        (2024-05-01)
+       qwen3-30b-a3b                                                          (2024-05-01)
+       qwen3-14b                                                              (2024-05-01)
+       qwen3-8b                                                               (2024-05-01)
+       qwq-plus-latest                                                        (2024-05-01)
+       Qwen2-7B-Instruct                                                      (2024-05-01)
+       qwq-32b                                                                (2024-05-01)
+       qwen3-1.7b                                                             (2024-05-01)
+       qwen-vl-plus                                                           (2024-05-01)
+       qwen2.5-32b-instruct                                                   (2024-05-01)
+       qwen3-0.6b                                                             (2024-05-01)
+       qvq-max                                                                (2024-05-01)
+       qwen-max                                                               (2024-05-01)
+       qwen3-32b                                                              (2024-05-01)
+       qwen-ma
+       qwen-vl-max-2025-04-02                                                 (2024-05-01)
+       qwen3-235b-a22b                                                        (2024-05-01)
+       qwen-plus-2024-11-27                                                   (2024-05-01)
+       qwen-plus-latest                                                       (2024-05-01)
+       qwen-omni-turbo-2025-03-26                                             (2024-05-01)
+
+     OpenAI: 43 models
+     ----------------------------------------------------------------------------------------------------
+       gpt-5-mini-stream                                                      (2025-08-21)
+       gpt-5-chat-latest-stream                                               (2025-08-21)
+       gpt-5-nano-stream                                                      (2025-08-21)
+       ccr/gpt-5-stream                                                       (2025-08-21)
+       gpt-5-stream                                                           (2025-08-21)
+       ccr/gpt-4o                                                             (2025-08-14)
+       ccr/gpt-5                                                              (2025-08-14)
+       gpt-oss-20b                                                            (2025-08-08)
+       gpt-oss-120b                                                           (2025-08-08)
+       gpt-5                                                                  (2025-08-08)
+       gpt-5-mini                                                             (2025-08-08)
+       gpt-5-chat-latest                                                      (2025-08-08)
+       gpt-5-nano                                                             (2025-08-08)
+       o3                                                                     (2025-04-21)
+       o1                                                                     (2025-02-26)
+       gpt-4.5-preview                                                        (2025-02-26)
+       chatgpt-4o-latest-off                                                  (2025-02-20)
+       o3-mini                                                                (2025-02-08)
+       chatgpt-4o-latest                                                      (2024-09-19)
+       gpt-4                                                                  (2024-07-15)
+       gpt-4o-mini-rap                                                        (2024-05-01)
+       gpt-3.5-turbo-16k                                                      (2024-05-01)
+       gpt-4-turbo                                                            (2024-05-01)
+       gpt-3.5                                                                (2024-05-01)
+       gpt-4.1                                                                (2024-05-01)
+       gpt-4o                                                                 (2024-05-01)
+       o1-preview                                                             (2024-05-01)
+       gpt-4-0613                                                             (2024-05-01)
+       gpt-4.1-mini                                                           (2024-05-01)
+       gpt-4-1106-preview                                                     (2024-05-01)
+       gpt-4o-all                                                             (2024-05-01)
+       gpt-4o-2024-11-20                                                      (2024-05-01)
+       gpt-4o-2024-05-13                                                      (2024-05-01)
+       gpt3.5                                                                 (2024-05-01)
+       o1-mini                                                                (2024-05-01)
+       gpt-4o-mini                                                            (2024-05-01)
+       o1-pro
+       gpt-4.1-nano                                                           (2024-05-01)
+       o4-mini                                                                (2024-05-01)
+       gpt-4o-mini-2024-07-18                                                 (2024-05-01)
+       gpt-4o-for-sado-only                                                   (2024-05-01)
+       gpt-4o-audio-preview                                                   (2024-05-01)
+
+     Anthropic (Claude): 40 models
+     ----------------------------------------------------------------------------------------------------
+       ccr/claude-haiku-4-5-20251001-thinking                                 (2025-10-28)
+       ccr/claude-haiku-4-5-20251001                                          (2025-10-28)
+       ccr/claude-sonnet-4-5-20250929-thinking                                (2025-09-30)
+       claude-haiku-4-5-20251001                                              (2025-09-30)
+       ccr/claude-sonnet-4-5-20250929-code                                    (2025-09-30)
+       claude-haiku-4-5-20251001-thinking                                     (2025-09-30)
+       claude-sonnet-4-5-20250929-thinking                                    (2025-09-30)
+       claude-sonnet-4-5-20250929                                             (2025-09-30)
+       ccr/claude-opus-4-1-20250805                                           (2025-09-02)
+       ccr/claude-sonnet-4-20250514-code                                      (2025-08-14)
+       claude-sonnet-4-20250514-code                                          (2025-08-12)
+       claude-3-7-sonnet-20250219-backup                                      (2025-03-12)
+       claude-3-7-sonnet-20250219-thinking                                    (2025-02-26)
+       claude-3-7-sonnet-20250219-thinking-backup                             (2025-02-26)
+       claude-3-7-sonnet-20250219                                             (2025-02-25)
+       claude-opus-4-1-20250805-thinking                                      (2024-08-06)
+       claude-opus-4-1-20250805                                               (2024-08-06)
+       claude-3-5-sonnet                                                      (2024-07-15)
+       claude-3-5-sonnet-backup                                               (2024-07-15)
+       claude-3-haiku-backup                                                  (2024-05-01)
+       claude-opus-4-20250514-backup                                          (2024-05-01)
+       claude-3-sonnet-backup                                                 (2024-05-01)
+       claude-sonnet-4-20250514-backup                                        (2024-05-01)
+       claude-3-5-sonnet-20241022                                             (2024-05-01)
+       claude-3-sonnet                                                        (2024-05-01)
+       claude-3-opus-backup                                                   (2024-05-01)
+       claude-haiku-4-5-20251001-memory                                       (2024-05-01)
+       claude-3-opus                                                          (2024-05-01)
+       claude-3-5-haiku-20241022                                              (2024-05-01)
+       claude-opus-4-20250514                                                 (2024-05-01)
+       claude-sonnet-4-20250514-thinking                                      (2024-05-01)
+       claude-sonnet-4-20250514-thinking-backup                               (2024-05-01)
+       claude-3-5-sonnet-20240620                                             (2024-05-01)
+       claude-sonnet-4-20250514                                               (2024-05-01)
+       claude-opus-4-20250514-thinking                                        (2024-05-01)
+       claude-opus-4-20250514-thinking-backup                                 (2024-05-01)
+       claude-
+       claude-3-5-haiku-20241022-backup                                       (2024-05-01)
+
+     Google (Gemini/Gemma): 25 models
+     ----------------------------------------------------------------------------------------------------
+       gemini-2.5-flash-preview-09-2025                                       (2025-09-26)
+       gemini-2.5-flash-lite-preview-09-2025                                  (2025-09-26)
+       gemini-2.5-flash-preview-05-20                                         (2025-09-25)
+       gemma-3-12b-it                                                         (2025-09-16)
+       gemini-2.5-flash-preview-05-20-thinking                                (2025-05-29)
+       gemini-2.5-flash-preview-04-17-thinking                                (2025-05-29)
+       gemini-2.5-pro-preview-03-25-backup                                    (2025-05-08)
+       gemini-2.5-flash-preview-04-17                                         (2025-04-29)
+       gemini-2.5-pro-exp-03-25                                               (2025-03-18)
+       gemini-2.0-flash-thinking-exp-01-21                                    (2025-02-07)
+       gemini-2.0-pro-exp-02-05                                               (2025-02-07)
+       gemini-2.5-pro-thinking                                                (2024-09-19)
+       gemini-2.5-flash-lite-preview-06-17                                    (2024-09-19)
+       gemini-2.5-pro-exp-03-25-nx                                            (2024-05-01)
+       gemini-1.5-flash                                                       (2024-05-01)
+       gemini-2.0-flash-thinking-exp                                          (2024-05-01)
+       gemini-1.5-flash-8b                                                    (2024-05-01)
+       gemini-2.0-flash                                                       (2024-05-01)
+       gemini-2.5-pro                                                         (2024-05-01)
+       gemini-2.0-flash-exp                                                   (2024-05-01)
+       gemini-2.0-flash-exp-self                                              (2024-05-01)
+       gemini-2.5-pro-preview-03-25                                           (2024-05-01)
+       gemini-exp-1114                                                        (2024-05-01)
+       gemini-exp-1206                                                        (2024-05-01)
+       gemma-3                                                                (2024-05-01)
+
+     DeepSeek: 19 models
+     ----------------------------------------------------------------------------------------------------
+       deepseek-v3.1-volce                                                    (2025-10-15)
+       deepseek-v3.1-think                                                    (2025-09-30)
+       deepseek-v3.1                                                          (2025-09-03)
+       deepseek-v3-volce-rap                                                  (2025-05-29)
+       deepseek-r1-0528-volce                                                 (2025-05-29)
+       deepseek-v3                                                            (2025-05-29)
+       deepseek-r1-0120-volce-for-rap                                         (2025-05-29)
+       deepseek-r1-0528-volce-basemodel-backup                                (2025-05-29)
+       deepseek-r1-0528-volce-basemodel                                       (2025-05-29)
+       deepseek-prover-v2-671b                                                (2025-05-20)
+       ccr/deepseek-v3.1                                                      (2024-09-03)
+       deepseek-web-coder                                                     (2024-05-01)
+       deepseek-coder
+       deepseek-r1                                                            (2024-05-01)
+       deepseek-chat                                                          (2024-05-01)
+
+     xAI (Grok): 17 models
+     ----------------------------------------------------------------------------------------------------
+       grok-code-fast-1                                                       (2025-11-13)
+       ccr/grok-4                                                             (2025-08-14)
+       grok-3-latest                                                          (2024-05-01)
+       grok-3-deepsearch                                                      (2024-05-01)
+       grok-3-mini-fast-beta                                                  (2024-05-01)
+       grok-3-mini-latest                                                     (2024-05-01)
+       grok-4                                                                 (2024-05-01)
+       grok-3-mini-fast                                                       (2024-05-01)
+       grok-3-fast-latest                                                     (2024-05-01)
+       grok-3-mini-fast-latest                                                (2024-05-01)
+       grok-3-mini-beta                                                       (2024-05-01)
+       grok-3                                                                 (2024-05-01)
+       grok-3-beta                                                            (2024-05-01)
+       grok-3-fast-beta                                                       (2024-05-01)
+       grok-3-mini                                                            (2024-05-01)
+       grok-3-fast                                                            (2024-05-01)
+       grok-4-0709                                                            (2024-05-01)
+
+     Zhipu AI (GLM): 16 models
+     ----------------------------------------------------------------------------------------------------
+       ccr/glm-4.6                                                            (2025-10-09)
+       glm-4.6                                                                (2025-10-02)
+       ccr/glm-4.5                                                            (2025-09-03)
+       glm-4.5v                                                               (2025-08-12)
+       glm-4v-plus                                                            (2024-09-03)
+       chatglm_turbo                                                          (2024-05-01)
+       glm-4.5                                                                (2024-05-01)
+       glm-web-deepresearch                                                   (2024-05-01)
+       glm-4.5-airx                                                           (2024-05-01)
+       glm-4-plus                                                             (2024-05-01)
+       glm-4.5-air                                                            (2024-05-01)
+       glm-4.1v-thinking-flashx                                               (2024-05-01)
+       glm-web                                                                (2024-05-01)
+       glm-4                                                                  (2024-05-01)
+       glm-4.5-x                                                              (2024-05-01)
+       chatglm_pro                                                            (2024-05-01)
+
+     ByteDance (Doubao): 16 models
+     ----------------------------------------------------------------------------------------------------
+       doubao-seed-1.6-vision
+       doubao-vision-pro-32k                                                  (2024-05-01)
+       doubao-1.5-lite-32k                                                    (2024-05-01)
+       doubao-1.5-pro-32k                                                     (2024-05-01)
+       Doubao-lite-128k                                                       (2024-05-01)
+       doubao-1.5-thinking-vision-pro                                         (2024-05-01)
+       doubao-1.5-ui-tars                                                     (2024-05-01)
+       Doubao-pro-32k                                                         (2024-05-01)
+       doubao-1.5-vision-pro                                                  (2024-05-01)
+       doubao-1.5-pro-256k                                                    (2024-05-01)
+       Doubao-pro-128k                                                        (2024-05-01)
+       doubao-1.5-vision-pro-32k                                              (2024-05-01)
+
+     Moonshot AI (Kimi): 16 models
+     ----------------------------------------------------------------------------------------------------
+       ccr/kimi-k2-thinking                                                   (2025-11-06)
+       kimi-k2-thinking                                                       (2025-11-06)
+       ccr/kimi-k2-0905-preview                                               (2025-09-05)
+       ccr/kimi-k2-turbo-preview                                              (2025-09-05)
+       kimi-k2-0905-preview                                                   (2025-09-05)
+       kimi-k2-turbo-preview                                                  (2025-09-05)
+       ccr/kimi-k2-0711-preview                                               (2025-08-14)
+       kimi-k2-0711-preview-volce                                             (2025-08-14)
+       kimi-k2-0711-preview                                                   (2025-07-12)
+       moonshot-v1-128k-vision-preview                                        (2024-05-01)
+       moonshot-v1-8k-vision-preview                                          (2024-05-01)
+       moonshot                                                               (2024-05-01)
+       moonshot-128k                                                          (2024-05-01)
+       moonshot-v1-32k-vision-preview                                         (2024-05-01)
+       kimi-web                                                               (2024-05-01)
+       kimi-research-web                                                      (2024-05-01)
+
+     Web-Enabled Models: 7 models
+     ----------------------------------------------------------------------------------------------------
+       yuanbao-web-t1-search                                                  (2024-05-01)
+       hailuo-web                                                             (2024-05-01)
+       metaso-web-research                                                    (2024-05-01)
+       metaso-web                                                             (2024-05-01)
+       yuanbao-web-search                                                     (2024-05-01)
+       metaso-web-strong-research                                             (2024-05-01)
+       yuanbao-web-t1                                                         (2024-05-01)
+
+     MiniMax: 7 models
+     ----------------------------------------------------------------------------------------------------
+       ccr/minimax-m2                                                         (2025-10-28)
+       minimax-m2
+
+     iFlytek (Spark): 4 models
+     ----------------------------------------------------------------------------------------------------
+       SparkDesk-v3.5                                                         (2024-05-01)
+       SparkDesk                                                              (2024-05-01)
+       spark-web                                                              (2024-05-01)
+       spark-4.0-ultra                                                        (2024-05-01)
+
+     KAT AI: 4 models
+     ----------------------------------------------------------------------------------------------------
+       kat-dev-72b-exp                                                        (2025-10-22)
+       ccr/kat-coder                                                          (2025-10-22)
+       kat-coder                                                              (2025-10-22)
+       ccr/kat-dev-72b-exp                                                    (2025-10-22)
+
+     Baidu (ERNIE): 2 models
+     ----------------------------------------------------------------------------------------------------
+       ernie-4.5-turbo-vl-preview                                             (2025-07-23)
+       ERNIE-Bot-4                                                            (2024-05-01)
+
+     Google (Imagen): 1 models
+     ----------------------------------------------------------------------------------------------------
+       imagen-3.0-generate-002                                                (2024-05-01)
+
+     Meta (Llama): 1 models
+     ----------------------------------------------------------------------------------------------------
+       llama-4-maverick                                                       (2025-07-23)
+
+     MiniMax (Abab): 1 models
+     ----------------------------------------------------------------------------------------------------
+       abab7-preview-chat                                                     (2024-05-01)
+
+     01.AI (Yi): 1 models
+     ----------------------------------------------------------------------------------------------------
+       yi-lightning                                                           (2024-05-01)
+
+     Recraft AI: 1 models
+     ----------------------------------------------------------------------------------------------------
+       recraftv3-img-gen-proxy                                                (2024-05-01)
+
+     ====================================================================================================

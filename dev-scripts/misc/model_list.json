@@ -1,0 +1,4772 @@
+{
+  "data": [
+    {
+      "created": 1714536000,
+      "id": "chatglm_turbo",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-audio-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "yuanbao-web-t1-search",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-2.0-pro-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1762925040,
+      "id": "minimax-s2v-01",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1754625600,
+      "id": "gpt-5",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hailuo-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.5-pro-exp-03-25-nx",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "flux-pro-1.1-ultra",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1759980180,
+      "id": "gemini-2.5-flash-image",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-1.5-flash-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "deepseek-v3-volce-rap",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线上使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-seedance-lite-t2v",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-mini-rap",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1762918140,
+      "id": "gemini-2.5-flash-vision-provider",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-haiku-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1760702400,
+      "id": "ccr/qwen3-vl-235b-a22b-instruct",
+      "object": "model",
+      "owned_by": "wedgean",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-vision-pro-32k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-deepsearch",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-seed-2.0-edit-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-4.5",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-web-coder",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-omni-turbo-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-realtime",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "realtime",
+          "desc": "支持调用/v1/realtime接口"
+        }
+      ]
+    },
+    {
+      "created": 1725354780,
+      "id": "ccr/deepseek-v3.1",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1760702400,
+      "id": "ccr/qwen3-vl-235b-a22b-thinking",
+      "object": "model",
+      "owned_by": "wedgean",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen2.5-vl-32b-instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-web-deepresearch",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726113600,
+      "id": "sd3-large-turbo",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-tts-clone",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-4.5-airx",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755163860,
+      "id": "ccr/claude-sonnet-4-20250514-code",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1756784820,
+      "id": "ccr/claude-opus-4-1-20250805",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-coder",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-seed-edit-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1754625600,
+      "id": "gpt-5-mini",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755163860,
+      "id": "ccr/grok-4",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1762349100,
+      "id": "doubao-seedance-1.0-pro-kmood",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-opus-4-20250514-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1758858900,
+      "id": "gemini-2.5-flash-preview-09-2025",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1760703360,
+      "id": "sora-2",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1762435500,
+      "id": "qwen3-max-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1721016000,
+      "id": "claude-3-5-sonnet",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-exp-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "o3-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "responses",
+          "desc": "支持调用/v1/responses接口"
+        }
+      ]
+    },
+    {
+      "created": 1757133060,
+      "id": "qwen3-max",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1762435500,
+      "id": "ccr/kimi-k2-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758705540,
+      "id": "tongyi-deepresearch-30b-a3b",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "baidu-tts",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1745899200,
+      "id": "gemini-2.5-flash-preview-04-17",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-seedream-3.0-t2i",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1744948800,
+      "id": "doubao-1.5-thinking-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "moonshot-v1-128k-vision-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726718400,
+      "id": "gemini-2.5-pro-thinking",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1754020800,
+      "id": "qwen3-coder-flash",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1754971200,
+      "id": "claude-sonnet-4-20250514-code",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759982400,
+      "id": "ccr/glm-4.6",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759204800,
+      "id": "ccr/claude-sonnet-4-5-20250929-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-thinking-exp-version",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1738987200,
+      "id": "o3-mini",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax-I2V-01-Director-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1744948800,
+      "id": "doubao-1.5-thinking-pro-vision",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax6.5-chat",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-realtime",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "realtime",
+          "desc": "支持调用/v1/realtime接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-large-vision",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-3.5-turbo-16k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kling-v1.6-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "flux-kontext-pro-img-gen-proxy",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1756889700,
+      "id": "ccr/glm-4.5",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "deepseek-r1-0528-volce",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-sonnet-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1758871440,
+      "id": "wan2.5-i2i-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1761622140,
+      "id": "ccr/claude-haiku-4-5-20251001-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1740542400,
+      "id": "o1",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "SparkDesk-v3.5",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax-speech-01-turbo",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1755756480,
+      "id": "gpt-5-mini-stream",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1761622140,
+      "id": "ccr/minimax-m2",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-1.5-flash",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1754625600,
+      "id": "gpt-5-chat-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1763004540,
+      "id": "grok-code-fast-1",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-7-sonnet-20250219-native",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1746676800,
+      "id": "gemini-2.5-pro-preview-03-25-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755756480,
+      "id": "gpt-5-chat-latest-stream",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-exp-1206-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-reasoner",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-mini-fast-beta",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "imagen-3.0-generate-002",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "flux-kontext-ultra",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kling-v2.1-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1753243200,
+      "id": "llama-4-maverick",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755163860,
+      "id": "ccr/gpt-4o",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "metaso-web-research",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758717480,
+      "id": "gpt-5-codex",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "responses",
+          "desc": "支持调用/v1/responses接口"
+        }
+      ]
+    },
+    {
+      "created": 1759204800,
+      "id": "claude-haiku-4-5-20251001",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-1.5-lite-32k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-seedance-lite-i2v",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1752811200,
+      "id": "gpt-image-1",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4-turbo",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hailuo-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-r1-volce",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726718400,
+      "id": "gemini-2.5-flash-lite-preview-06-17",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-thinking-exp",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax-speech-02-hd",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1759377600,
+      "id": "glm-4.6",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1747022400,
+      "id": "kling-v2-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-3.5",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-mini-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1754638560,
+      "id": "gpt-oss-20b",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-exp-1206-version",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qvq-max-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4.1",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-seedance-1.0-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-jimeng-3.0-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1756286760,
+      "id": "gemini-2.5-flash-image-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-exp-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.5-pro-preview-05-06-version",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1760703360,
+      "id": "sora-2-pro",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-sonnet-4-20250514-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "SparkDesk",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-4-plus",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759204800,
+      "id": "ccr/claude-sonnet-4-5-20250929-code",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-sonnet-20241022",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1753243200,
+      "id": "ernie-4.5-turbo-vl-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1762313340,
+      "id": "gemini-2.5-flash-image-kmood",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1740542400,
+      "id": "gpt-4.5-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "abab7-preview-chat",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-omni-turbo",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen2.5-omni-7b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "deepseek-v3",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-1.5-flash-8b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-4",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1757042700,
+      "id": "ccr/kimi-k2-0905-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "ERNIE-Bot-4",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-sonnet",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-tts",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1757042700,
+      "id": "ccr/kimi-k2-turbo-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1761135360,
+      "id": "kat-dev-72b-exp",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-mini-fast",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen3-30b-a3b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1760512860,
+      "id": "minimax-speech-2.5-hd-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "mistral-ocr-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "ocr",
+          "desc": "支持调用/v1/ocr接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen3-14b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "metaso-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "o1-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-3.0-pro-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-opus-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-4.5-air",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726113600,
+      "id": "flux-schnell",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "flux-kontext-max-img-gen-proxy",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1760512860,
+      "id": "minimax-speech-2.5-turbo-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4-0613",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax5.5-chat",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "gemini-2.5-flash-preview-05-20-thinking",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.5-pro-preview-06-05-vision-provider",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-haiku-4-5-20251001-memory",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-opus",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-haiku-20241022",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-1.5-pro-32k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1752292800,
+      "id": "qwen3-235b-a22b-instruct-2507",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726718400,
+      "id": "qwen2.5-math-72b-instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "microsoft-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4.1-mini",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1757042700,
+      "id": "kimi-k2-0905-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-tts-hd",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "moonshot-v1-8k-vision-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen3-8b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4-1106-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "pixverse-v3.5-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-fast-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-opus-4-20250514",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "deepseek-r1-0120-volce-for-rap",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线上使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "qwen2.5-vl-72b-instruct-ali",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-thinking-exp-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1740024000,
+      "id": "chatgpt-4o-latest-off",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1743566400,
+      "id": "qvq-max-ali",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.5-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "moonshot",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-exp",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwq-plus-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "deepseek-r1-0528-volce-basemodel-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线上使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1740542400,
+      "id": "claude-3-7-sonnet-20250219-thinking",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1754625600,
+      "id": "gpt-5-nano",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1738900800,
+      "id": "gemini-2.0-flash-thinking-exp-01-21",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-mini-fast-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-4.1v-thinking-flashx",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1754991060,
+      "id": "glm-4.5v",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758705540,
+      "id": "qwen3-vl-235b-a22b-instruct",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-sonnet-4-20250514-thinking",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "gemini-2.5-flash-preview-04-17-thinking",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758773940,
+      "id": "gemini-2.5-flash-preview-05-20",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726113600,
+      "id": "dall-e-3",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-web-think",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-exp-version",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1738900800,
+      "id": "gemini-2.0-pro-exp-02-05",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-sonnet-4-20250514-thinking-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-t1-vision-20250619",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759257780,
+      "id": "wan2.5-i2v-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1762349100,
+      "id": "doubao-seedance-lite-t2v-kmood",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "Qwen2-7B-Instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726718400,
+      "id": "qwen-coder-turbo-2024-09-19",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwq-32b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1747713600,
+      "id": "deepseek-prover-v2-671b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-sonnet-20240620",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "zhipu-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "Doubao-lite-128k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-1.5-thinking-vision-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755163860,
+      "id": "ccr/kimi-k2-0711-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-sonnet-4-20250514",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1759257780,
+      "id": "wan2.5-t2v-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1762349100,
+      "id": "doubao-seedance-lite-i2v-kmood",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-opus-4-20250514-thinking",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1762925040,
+      "id": "minimax-hailuo-2.3",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-mini-tts",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-transcribe",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1762925040,
+      "id": "minimax-hailuo-02",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kling-v1.5-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "text-embedding-3-large",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "embeddings",
+          "desc": "支持调用/v1/embeddings接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-vision-provider",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1722916800,
+      "id": "claude-opus-4-1-20250805-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-4",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1725336000,
+      "id": "glm-4v-plus",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-tts",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-all",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1748491200,
+      "id": "deepseek-r1-0528-volce-basemodel",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-opus-4-20250514-thinking-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1753243200,
+      "id": "qwen3-coder-plus",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1757042700,
+      "id": "kimi-k2-turbo-preview",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1761553740,
+      "id": "minimax-m2",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1723435200,
+      "id": "qwen-vl-max",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-mini-beta",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1749528000,
+      "id": "doubao-seed-1.6",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1760673600,
+      "id": "kling-v2.1-master-video-gen",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "yi-lightning",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-realtime-preview-realtime",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "realtime",
+          "desc": "支持调用/v1/realtime接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "flux-kontext-max",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-turbo",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-img-gen",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1755756480,
+      "id": "gpt-5-nano-stream",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1760599260,
+      "id": "gpt-5-pro",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "responses",
+          "desc": "支持调用/v1/responses接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-sonnet-20240620-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1740542400,
+      "id": "claude-3-7-sonnet-20250219-thinking-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1760512860,
+      "id": "minimax-speech-02-turbo",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1759204800,
+      "id": "claude-haiku-4-5-20251001-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "recraftv3-img-gen-proxy",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen3-1.7b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726718400,
+      "id": "qwen2.5-coder-7b-instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-2024-11-20",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1745208000,
+      "id": "o3",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-2024-05-13",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-vl-plus",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-audio-preview-realtime",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "realtime",
+          "desc": "支持调用/v1/realtime接口"
+        }
+      ]
+    },
+    {
+      "created": 1746504000,
+      "id": "o3-deep-research",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "responses",
+          "desc": "支持调用/v1/responses接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-1.5-ui-tars",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759550400,
+      "id": "qwen3-vl-30b-a3b-instruct",
+      "object": "model",
+      "owned_by": "wedgean",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt3.5",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen2.5-32b-instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "text-embedding-ada-002",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "embeddings",
+          "desc": "支持调用/v1/embeddings接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "o1-mini",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-beta",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "yuanbao-web-search",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-mini",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755163860,
+      "id": "kimi-k2-0711-preview-volce",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "moonshot-128k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "moonshot-v1-32k-vision-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758705540,
+      "id": "qwen3-vl-235b-a22b-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-sonnet-20241022-native-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1761135360,
+      "id": "ccr/kat-coder",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "metaso-web-strong-research",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "glm-4.5-x",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kimi-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759204800,
+      "id": "claude-sonnet-4-5-20250929-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-pro",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "Doubao-pro-32k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.5-pro-preview-06-05-vision",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1757042700,
+      "id": "doubao-seed-1.6-vision",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1761622140,
+      "id": "ccr/claude-haiku-4-5-20251001",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1758013620,
+      "id": "gemma-3-12b-it",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.0-flash-exp-self",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen3-0.6b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755756480,
+      "id": "ccr/gpt-5-stream",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-1.5-vision-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-fast-beta",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758858900,
+      "id": "gemini-2.5-flash-lite-preview-09-2025",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-wanx-v1",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kling-v1",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        },
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "baidu-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-1.5-pro-256k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-mini",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1762435500,
+      "id": "kimi-k2-thinking",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1742270400,
+      "id": "qwen2.5-vl-72b-instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax6.5s-chat",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726113600,
+      "id": "flux-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.5-pro-preview-03-25",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-2.5-pro-vision-provider",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1760113140,
+      "id": "qwen3-235b-a22b-thinking-2507",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "Doubao-pro-128k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kling-v1-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "o1-pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qvq-max",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-sonnet-20241022-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-audio-preview-2024-12-17",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758604440,
+      "id": "qwen3-tts-flash",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-haiku",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1726113600,
+      "id": "sd3-large",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "recraft-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-exp-1114",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1721016000,
+      "id": "claude-3-5-sonnet-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1725336000,
+      "id": "Qwen2-VL-72B",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-max",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "chatglm_pro",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-r1",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-haiku-20241022-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1756890780,
+      "id": "deepseek-v3.1",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1761135360,
+      "id": "kat-coder",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726718400,
+      "id": "qwen2.5-72b-instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-standard",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-1.5-vision-pro-32k",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1742270400,
+      "id": "gemini-2.5-pro-exp-03-25",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-3-fast",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4.1-nano",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen3-32b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1726718400,
+      "id": "chatgpt-4o-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "text-embedding-3-small",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "embeddings",
+          "desc": "支持调用/v1/embeddings接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-seed-edit-3.0-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1755163860,
+      "id": "ccr/gpt-5",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-max-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "Qwen2-VL-7B-Instruct",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1740456000,
+      "id": "claude-3-7-sonnet-20250219",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "microsoft-tts",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-realtime",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "realtime",
+          "desc": "支持调用/v1/realtime接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kimi-research-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-vl-max-2025-04-02",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen3-235b-a22b",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1722916800,
+      "id": "claude-opus-4-1-20250805",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax-m1",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-tts-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "tts",
+          "desc": "支持调用/v1/audio/speech接口"
+        }
+      ]
+    },
+    {
+      "created": 1752292800,
+      "id": "kimi-k2-0711-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "spark-web",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-plus-2024-11-27",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax-text-01",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "yuanbao-web-t1",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759244520,
+      "id": "deepseek-v3.1-think",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-plus-latest",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1721016000,
+      "id": "gpt-4",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "spark-4.0-ultra",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1755756480,
+      "id": "gpt-5-stream",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1760540520,
+      "id": "deepseek-v3.1-volce",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "model_note": "线下使用",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-1.5-pro-vision",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "multimodal_understanding",
+          "desc": "支持调用/v1/prompt/file、/v1/file/upload接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemini-exp-1206",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "o4-mini",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1754638560,
+      "id": "gpt-oss-120b",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-mini-2024-07-18",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "kling-v2-master-video-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1722484800,
+      "id": "hunyuan-turbos-20250416",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "whisper-1",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "qwen-omni-turbo-2025-03-26",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1759204800,
+      "id": "claude-sonnet-4-5-20250929",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1738900800,
+      "id": "qwen-max-2025-01-25",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1758717480,
+      "id": "ccr/gpt-5-codex",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "responses",
+          "desc": "支持调用/v1/responses接口"
+        }
+      ]
+    },
+    {
+      "created": 1762348920,
+      "id": "flux-kontext-max-img-gen-proxy-kmood",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1762925040,
+      "id": "minimax-hailuo-2.3-fast",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "video_gen",
+          "desc": "支持调用/v1/videos/generations、/v1/videos/query接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "deepseek-chat",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gemma-3",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1741752000,
+      "id": "claude-3-7-sonnet-20250219-backup",
+      "object": "model",
+      "owned_by": "ankang",
+      "model_note": "for waic",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        },
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "minimax-image-01-img-gen",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "image_gen",
+          "desc": "支持调用/v1/images/generations接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-for-sado-only",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1749528000,
+      "id": "doubao-seed-1.6-thinking",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "gpt-4o-audio-preview",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1746504000,
+      "id": "o4-mini-deep-research",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "responses",
+          "desc": "支持调用/v1/responses接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "grok-4-0709",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "hunyuan-asr",
+      "object": "model",
+      "owned_by": "gaoshuli",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1761135360,
+      "id": "ccr/kat-dev-72b-exp",
+      "object": "model",
+      "owned_by": "huangzhiguo",
+      "support_apis": [
+        {
+          "id": "chat",
+          "desc": "支持调用/v1/chat/completions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "doubao-asr",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "asr",
+          "desc": "支持调用/v1/audio/transcriptions接口"
+        }
+      ]
+    },
+    {
+      "created": 1714536000,
+      "id": "claude-3-5-sonnet-20241022-native",
+      "object": "model",
+      "owned_by": "ankang",
+      "support_apis": [
+        {
+          "id": "claude_native",
+          "desc": "支持调用/v1/messages接口"
+        }
+      ]
+    }
+  ]
+}

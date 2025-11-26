@@ -1,0 +1,35 @@
+# docker-compose.stepflow.yml
+# Custom docker-compose configuration for LiteLLM with StepFlow provider
+#
+# Usage:
+#   docker-compose -f docker-compose.yml -f docker-compose.stepflow.yml up -d
+#
+# This override file:
+# - Builds from local source (includes StepFlow provider)
+# - Uses custom image tag
+# - Adds StepFlow environment variables
+# - Fixes database connection timing issues
+
+services:
+  litellm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        target: runtime
+    image: litellm-stepflow:latest  # Custom image name
+    environment:
+      # StepFlow API Keys (optional - can also use config.yaml)
+      STEPFLOW_API_KEY: "${STEPFLOW_API_KEY:-}"
+      MODEL_PROXY_API_KEY: "${MODEL_PROXY_API_KEY:-}"
+      DATABASE_URL: "postgresql://llmproxy:dbpassword9090@db:5432/litellm"
+      STORE_MODEL_IN_DB: "True"
+    # Wait for database to be healthy before starting
+    depends_on:
+      db:
+        condition: service_healthy
+    # Uncomment to mount config with StepFlow models
+    # volumes:
+    #   - ./config.stepflow.yaml:/app/config.yaml
+    # command:
+    #   - "--config=/app/config.yaml"

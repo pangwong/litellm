@@ -161,6 +161,8 @@ from .llms.bedrock.chat import BedrockConverseLLM, BedrockLLM
 from .llms.bedrock.embed.embedding import BedrockEmbedding
 from .llms.bedrock.image.image_handler import BedrockImageGeneration
 from .llms.bytez.chat.transformation import BytezChatConfig
+from .llms.stepflow.chat.transformation import StepFlowChatConfig
+from .llms.stepflow.embed.handler import stepflow_embedding
 from .llms.clarifai.chat.transformation import ClarifaiConfig
 from .llms.codestral.completion.handler import CodestralTextCompletion
 from .llms.cohere.embed import handler as cohere_embed
@@ -281,6 +283,7 @@ base_llm_http_handler = BaseLLMHTTPHandler()
 base_llm_aiohttp_handler = BaseLLMAIOHTTPHandler()
 sagemaker_chat_completion = SagemakerChatHandler()
 bytez_transformation = BytezChatConfig()
+stepflow_transformation = StepFlowChatConfig()
 heroku_transformation = HerokuChatConfig()
 oci_transformation = OCIChatConfig()
 ovhcloud_transformation = OVHCloudChatConfig()
@@ -3586,6 +3589,41 @@ def completion(  # type: ignore # noqa: PLR0915
             )
 
             pass
+        elif custom_llm_provider == "stepflow":
+            import sys
+            print(f"\n[STEPFLOW DEBUG] StepFlow handler called in main.py", file=sys.stderr)
+            print(f"  - model: {model}", file=sys.stderr)
+            print(f"  - api_base: {api_base}", file=sys.stderr)
+            print(f"  - custom_llm_provider: {custom_llm_provider}\n", file=sys.stderr)
+
+            api_key = (
+                api_key
+                or litellm.stepflow_key
+                or get_secret_str("STEPFLOW_API_KEY")
+                or get_secret_str("FLOW_EXTERNAL_TOKEN")
+                or litellm.api_key
+            )
+
+            response = base_llm_http_handler.completion(
+                model=model,
+                messages=messages,
+                headers=headers,
+                model_response=model_response,
+                api_key=api_key,
+                api_base=api_base,
+                acompletion=acompletion,
+                logging_obj=logging,
+                optional_params=optional_params,
+                litellm_params=litellm_params,
+                timeout=timeout,  # type: ignore
+                client=client,
+                custom_llm_provider=custom_llm_provider,
+                encoding=encoding,
+                stream=stream,
+                provider_config=stepflow_transformation,
+            )
+
+            pass
         elif custom_llm_provider == "lemonade":
             api_key = (
                 api_key
@@ -4221,6 +4259,29 @@ def embedding(  # noqa: PLR0915
                 optional_params=optional_params,
                 client=client,
                 aembedding=aembedding,
+            )
+        elif custom_llm_provider == "stepflow":
+            api_key = (
+                api_key
+                or litellm.stepflow_key
+                or get_secret_str("STEPFLOW_API_KEY")
+                or get_secret_str("FLOW_EXTERNAL_TOKEN")
+                or litellm.api_key
+            )
+
+            ## EMBEDDING CALL
+            response = stepflow_embedding.embedding(
+                model=model,
+                input=input,
+                api_base=api_base,
+                api_key=api_key,
+                logging_obj=logging,
+                timeout=timeout,
+                model_response=EmbeddingResponse(),
+                optional_params=optional_params,
+                client=client,
+                aembedding=aembedding,
+                litellm_params=litellm_params_dict,
             )
         elif (
             custom_llm_provider == "openai_like"

@@ -1,0 +1,822 @@
+{
+  "test_metadata": {
+    "timestamp": "2025-11-14T13:55:31.593378",
+    "total_models": 59,
+    "successful": 53,
+    "failed": 6,
+    "success_rate": "89.8%"
+  },
+  "provider_summary": {
+    "Anthropic (Claude)": {
+      "total": 7,
+      "successful": 7,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "DeepSeek": {
+      "total": 4,
+      "successful": 4,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "Google (Gemini)": {
+      "total": 6,
+      "successful": 5,
+      "failed": 1,
+      "success_rate": "83.3%"
+    },
+    "Zhipu AI (GLM)": {
+      "total": 5,
+      "successful": 5,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "OpenAI": {
+      "total": 14,
+      "successful": 14,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "xAI (Grok)": {
+      "total": 2,
+      "successful": 2,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "Moonshot AI (Kimi)": {
+      "total": 3,
+      "successful": 3,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "Alibaba (Qwen)": {
+      "total": 11,
+      "successful": 6,
+      "failed": 5,
+      "success_rate": "54.5%"
+    },
+    "ByteDance (Doubao)": {
+      "total": 5,
+      "successful": 5,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "MiniMax": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0,
+      "success_rate": "100.0%"
+    },
+    "Meta (Llama)": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0,
+      "success_rate": "100.0%"
+    }
+  },
+  "detailed_results": [
+    {
+      "model_name": "stepflow/claude-haiku-4-5-20251001",
+      "success": true,
+      "response_time_seconds": 4.5,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 37,
+        "total_tokens": 42
+      }
+    },
+    {
+      "model_name": "stepflow/deepseek-v3.1-volce",
+      "success": true,
+      "response_time_seconds": 1.15,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 20,
+        "total_tokens": 22
+      }
+    },
+    {
+      "model_name": "stepflow/gemini-2.5-flash-preview-09-2025",
+      "success": true,
+      "response_time_seconds": 1.12,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 16,
+        "total_tokens": 18
+      }
+    },
+    {
+      "model_name": "stepflow/gemini-2.5-pro",
+      "success": true,
+      "response_time_seconds": 2.71,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 99,
+        "prompt_tokens": 16,
+        "total_tokens": 115
+      }
+    },
+    {
+      "model_name": "stepflow/glm-4.6",
+      "success": true,
+      "response_time_seconds": 1.94,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 20,
+        "total_tokens": 120
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-5-chat-latest-stream",
+      "success": true,
+      "response_time_seconds": 2.36,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 22,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/grok-code-fast-1",
+      "success": true,
+      "response_time_seconds": 5.93,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 177,
+        "prompt_tokens": 219,
+        "total_tokens": 396
+      }
+    },
+    {
+      "model_name": "stepflow/kimi-k2-thinking",
+      "success": true,
+      "response_time_seconds": 4.37,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 82,
+        "prompt_tokens": 22,
+        "total_tokens": 104
+      }
+    },
+    {
+      "model_name": "stepflow/qwen3-max-preview",
+      "success": true,
+      "response_time_seconds": 1.57,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 23,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/gemini-2.5-flash-vision-provider",
+      "success": false,
+      "response_time_seconds": 3.85,
+      "response_text": "",
+      "error_message": "HTTP 500: {\"error\":{\"message\":\"litellm.APIConnectionError: StepflowException - StepFlow LLM request failed: Internal service error: HTTP 424, {\\\"code\\\":424,\\\"msg\\\":\\\"this model is not support chat api, model=ge",
+      "status_code": 500,
+      "usage": {}
+    },
+    {
+      "model_name": "stepflow/qwen3-max",
+      "success": true,
+      "response_time_seconds": 2.5,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 23,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/qwen3-235b-a22b",
+      "success": false,
+      "response_time_seconds": 5.87,
+      "response_text": "",
+      "error_message": "HTTP 500: {\"error\":{\"message\":\"litellm.APIConnectionError: StepflowException - StepFlow LLM request failed: Internal service error: HTTP 424, {\\\"code\\\":424,\\\"msg\\\":\\\"error, status code: 400, message: parameter.",
+      "status_code": 500,
+      "usage": {}
+    },
+    {
+      "model_name": "stepflow/qwen3-235b-a22b-thinking-2507",
+      "success": true,
+      "response_time_seconds": 7.05,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 211,
+        "prompt_tokens": 23,
+        "total_tokens": 234
+      }
+    },
+    {
+      "model_name": "stepflow/qwen3-32b",
+      "success": false,
+      "response_time_seconds": 5.49,
+      "response_text": "",
+      "error_message": "HTTP 500: {\"error\":{\"message\":\"litellm.APIConnectionError: StepflowException - StepFlow LLM request failed: Internal service error: HTTP 424, {\\\"code\\\":424,\\\"msg\\\":\\\"error, status code: 400, message: parameter.",
+      "status_code": 500,
+      "usage": {}
+    },
+    {
+      "model_name": "stepflow/qwen3-30b-a3b",
+      "success": false,
+      "response_time_seconds": 6.34,
+      "response_text": "",
+      "error_message": "HTTP 500: {\"error\":{\"message\":\"litellm.APIConnectionError: StepflowException - StepFlow LLM request failed: Internal service error: HTTP 424, {\\\"code\\\":424,\\\"msg\\\":\\\"error, status code: 400, message: parameter.",
+      "status_code": 500,
+      "usage": {}
+    },
+    {
+      "model_name": "stepflow/qwen3-14b",
+      "success": false,
+      "response_time_seconds": 5.78,
+      "response_text": "",
+      "error_message": "HTTP 500: {\"error\":{\"message\":\"litellm.APIConnectionError: StepflowException - StepFlow LLM request failed: Internal service error: HTTP 424, {\\\"code\\\":424,\\\"msg\\\":\\\"error, status code: 400, message: parameter.",
+      "status_code": 500,
+      "usage": {}
+    },
+    {
+      "model_name": "stepflow/qwen3-8b",
+      "success": false,
+      "response_time_seconds": 5.5,
+      "response_text": "",
+      "error_message": "HTTP 500: {\"error\":{\"message\":\"litellm.APIConnectionError: StepflowException - StepFlow LLM request failed: Internal service error: HTTP 424, {\\\"code\\\":424,\\\"msg\\\":\\\"error, status code: 400, message: parameter.",
+      "status_code": 500,
+      "usage": {}
+    },
+    {
+      "model_name": "stepflow/qwen3-vl-30b-a3b-instruct",
+      "success": true,
+      "response_time_seconds": 0.96,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 23,
+        "total_tokens": 26
+      }
+    },
+    {
+      "model_name": "stepflow/qwen3-vl-235b-a22b-instruct",
+      "success": true,
+      "response_time_seconds": 1.02,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 23,
+        "total_tokens": 26
+      }
+    },
+    {
+      "model_name": "stepflow/qwen3-vl-235b-a22b-thinking",
+      "success": true,
+      "response_time_seconds": 7.52,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 239,
+        "prompt_tokens": 25,
+        "total_tokens": 264
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-oss-20b",
+      "success": true,
+      "response_time_seconds": 1.73,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 39,
+        "prompt_tokens": 82,
+        "total_tokens": 121
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-oss-120b",
+      "success": true,
+      "response_time_seconds": 1.18,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 25,
+        "prompt_tokens": 82,
+        "total_tokens": 107
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-5",
+      "success": true,
+      "response_time_seconds": 11.34,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 21,
+        "total_tokens": 121
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-5-mini",
+      "success": true,
+      "response_time_seconds": 3.02,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 21,
+        "total_tokens": 121
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-5-nano",
+      "success": true,
+      "response_time_seconds": 3.35,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 21,
+        "total_tokens": 121
+      }
+    },
+    {
+      "model_name": "stepflow/o4-mini",
+      "success": true,
+      "response_time_seconds": 2.76,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 21,
+        "total_tokens": 42
+      }
+    },
+    {
+      "model_name": "stepflow/o3",
+      "success": true,
+      "response_time_seconds": 1.88,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 21,
+        "total_tokens": 42
+      }
+    },
+    {
+      "model_name": "stepflow/o3-mini",
+      "success": true,
+      "response_time_seconds": 1.83,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 21,
+        "total_tokens": 121
+      }
+    },
+    {
+      "model_name": "stepflow/o1-pro",
+      "success": true,
+      "response_time_seconds": 9.45,
+      "response_text": "Test successful. How can I assist you today?",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 22,
+        "total_tokens": 32
+      }
+    },
+    {
+      "model_name": "stepflow/o1",
+      "success": true,
+      "response_time_seconds": 3.07,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 21,
+        "total_tokens": 36
+      }
+    },
+    {
+      "model_name": "stepflow/o1-mini",
+      "success": true,
+      "response_time_seconds": 1.71,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 85,
+        "prompt_tokens": 21,
+        "total_tokens": 106
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-4o",
+      "success": true,
+      "response_time_seconds": 0.96,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 22,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/gpt-4o-mini",
+      "success": true,
+      "response_time_seconds": 1.62,
+      "response_text": "Test successful.",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 22,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/claude-haiku-4-5-20251001-thinking",
+      "success": true,
+      "response_time_seconds": 2.31,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 145,
+        "prompt_tokens": 67,
+        "total_tokens": 212
+      }
+    },
+    {
+      "model_name": "stepflow/claude-sonnet-4-5-20250929-thinking",
+      "success": true,
+      "response_time_seconds": 2.89,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 59,
+        "prompt_tokens": 67,
+        "total_tokens": 126
+      }
+    },
+    {
+      "model_name": "stepflow/claude-sonnet-4-5-20250929",
+      "success": true,
+      "response_time_seconds": 1.97,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 37,
+        "total_tokens": 42
+      }
+    },
+    {
+      "model_name": "stepflow/claude-sonnet-4-20250514-code",
+      "success": true,
+      "response_time_seconds": 6.71,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 37,
+        "total_tokens": 42
+      }
+    },
+    {
+      "model_name": "stepflow/claude-opus-4-1-20250805-thinking",
+      "success": true,
+      "response_time_seconds": 8.0,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 45,
+        "prompt_tokens": 51,
+        "total_tokens": 96
+      }
+    },
+    {
+      "model_name": "stepflow/claude-opus-4-1-20250805",
+      "success": true,
+      "response_time_seconds": 6.66,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 37,
+        "total_tokens": 42
+      }
+    },
+    {
+      "model_name": "stepflow/gemini-2.5-pro-thinking",
+      "success": true,
+      "response_time_seconds": 5.24,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 68,
+        "prompt_tokens": 16,
+        "total_tokens": 84
+      }
+    },
+    {
+      "model_name": "stepflow/gemini-2.5-flash-lite-preview-09-2025",
+      "success": true,
+      "response_time_seconds": 1.11,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 16,
+        "total_tokens": 18
+      }
+    },
+    {
+      "model_name": "stepflow/gemini-2.5-flash-preview-05-20-thinking",
+      "success": true,
+      "response_time_seconds": 9.88,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 30,
+        "prompt_tokens": 16,
+        "total_tokens": 46
+      }
+    },
+    {
+      "model_name": "stepflow/deepseek-v3.1-think",
+      "success": true,
+      "response_time_seconds": 4.73,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 127,
+        "prompt_tokens": 19,
+        "total_tokens": 146
+      }
+    },
+    {
+      "model_name": "stepflow/deepseek-v3.1",
+      "success": true,
+      "response_time_seconds": 0.77,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 19,
+        "total_tokens": 22
+      }
+    },
+    {
+      "model_name": "stepflow/deepseek-r1-0528-volce",
+      "success": true,
+      "response_time_seconds": 2.94,
+      "response_text": "Test successful! I can read your message perfectly. If you have any questions or need assistance with anything, feel free to ask. \ud83d\ude0a",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 68,
+        "prompt_tokens": 20,
+        "total_tokens": 88
+      }
+    },
+    {
+      "model_name": "stepflow/grok-4",
+      "success": true,
+      "response_time_seconds": 4.04,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 136,
+        "prompt_tokens": 699,
+        "total_tokens": 835
+      }
+    },
+    {
+      "model_name": "stepflow/glm-4.5v",
+      "success": true,
+      "response_time_seconds": 3.87,
+      "response_text": "\nTest successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 21,
+        "total_tokens": 83
+      }
+    },
+    {
+      "model_name": "stepflow/glm-4.5",
+      "success": true,
+      "response_time_seconds": 1.83,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 20,
+        "total_tokens": 120
+      }
+    },
+    {
+      "model_name": "stepflow/glm-4.5-airx",
+      "success": true,
+      "response_time_seconds": 0.87,
+      "response_text": "\nTest successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 38,
+        "prompt_tokens": 20,
+        "total_tokens": 58
+      }
+    },
+    {
+      "model_name": "stepflow/glm-4.5-air",
+      "success": true,
+      "response_time_seconds": 0.65,
+      "response_text": "\nTest successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 20,
+        "total_tokens": 42
+      }
+    },
+    {
+      "model_name": "stepflow/doubao-seed-1.6-vision",
+      "success": true,
+      "response_time_seconds": 1.18,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 33,
+        "prompt_tokens": 71,
+        "total_tokens": 104
+      }
+    },
+    {
+      "model_name": "stepflow/doubao-vision-pro-32k",
+      "success": true,
+      "response_time_seconds": 0.98,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 24,
+        "total_tokens": 26
+      }
+    },
+    {
+      "model_name": "stepflow/doubao-1.5-pro-256k",
+      "success": true,
+      "response_time_seconds": 0.69,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 23,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/doubao-1.5-lite-32k",
+      "success": true,
+      "response_time_seconds": 0.74,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 23,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/doubao-1.5-thinking-vision-pro",
+      "success": true,
+      "response_time_seconds": 1.0,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 17,
+        "prompt_tokens": 73,
+        "total_tokens": 90
+      }
+    },
+    {
+      "model_name": "stepflow/kimi-k2-0905-preview",
+      "success": true,
+      "response_time_seconds": 0.95,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 22,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/kimi-k2-turbo-preview",
+      "success": true,
+      "response_time_seconds": 0.92,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 22,
+        "total_tokens": 25
+      }
+    },
+    {
+      "model_name": "stepflow/minimax-m2",
+      "success": true,
+      "response_time_seconds": 3.46,
+      "response_text": "",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 56,
+        "total_tokens": 156
+      }
+    },
+    {
+      "model_name": "stepflow/llama-4-maverick",
+      "success": true,
+      "response_time_seconds": 0.65,
+      "response_text": "Test successful",
+      "error_message": "",
+      "status_code": 200,
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 25,
+        "total_tokens": 28
+      }
+    }
+  ]
+}

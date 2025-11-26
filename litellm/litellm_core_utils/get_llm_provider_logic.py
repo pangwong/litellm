@@ -145,6 +145,38 @@ def get_llm_provider(  # noqa: PLR0915
             dynamic_api_key = get_secret_str(api_key)
         # check if llm provider part of model name
 
+        # Check provider-specific prefixes that should NOT have their prefix stripped
+        # These providers use BaseConfig and handle the full model name themselves
+        # Must check BEFORE the general provider_list logic below
+        if model.startswith("stepflow/"):
+            custom_llm_provider = "stepflow"
+            # Keep the full model name - stepflow handler needs it
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("bytez/"):
+            custom_llm_provider = "bytez"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("heroku/"):
+            custom_llm_provider = "heroku"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("lemonade/"):
+            custom_llm_provider = "lemonade"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("cometapi/"):
+            custom_llm_provider = "cometapi"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("oci/"):
+            custom_llm_provider = "oci"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("compactifai/"):
+            custom_llm_provider = "compactifai"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("ovhcloud/"):
+            custom_llm_provider = "ovhcloud"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+        elif model.startswith("clarifai/"):
+            custom_llm_provider = "clarifai"
+            return model, custom_llm_provider, dynamic_api_key, api_base
+
         if (
             model.split("/", 1)[0] in litellm.provider_list
             and model.split("/", 1)[0] not in litellm.model_list_set
@@ -273,8 +305,29 @@ def get_llm_provider(  # noqa: PLR0915
                     return model, custom_llm_provider, dynamic_api_key, api_base  # type: ignore
 
         # check if model in known model provider list  -> for huggingface models, raise exception as they don't have a fixed provider (can be togetherai, anyscale, baseten, runpod, et.)
+
+        # Check provider-specific prefixes FIRST to avoid false matches
+        # (e.g. "stepflow/gpt-4o" should be "stepflow", not "openai")
+        if model.startswith("bytez/"):
+            custom_llm_provider = "bytez"
+        elif model.startswith("stepflow/"):
+            custom_llm_provider = "stepflow"
+        elif model.startswith("lemonade/"):
+            custom_llm_provider = "lemonade"
+        elif model.startswith("heroku/"):
+            custom_llm_provider = "heroku"
+        elif model.startswith("cometapi/"):
+            custom_llm_provider = "cometapi"
+        elif model.startswith("oci/"):
+            custom_llm_provider = "oci"
+        elif model.startswith("compactifai/"):
+            custom_llm_provider = "compactifai"
+        elif model.startswith("ovhcloud/"):
+            custom_llm_provider = "ovhcloud"
+        elif model.startswith("clarifai/"):
+            custom_llm_provider = "clarifai"
         ## openai - chatcompletion + text completion
-        if (
+        elif (
             model in litellm.open_ai_chat_completion_models
             or "ft:gpt-3.5-turbo" in model
             or "ft:gpt-4" in model  # catches ft:gpt-4-0613, ft:gpt-4o
@@ -366,26 +419,8 @@ def get_llm_provider(  # noqa: PLR0915
             custom_llm_provider = "gradient_ai"
         elif model == "*":
             custom_llm_provider = "openai"
-        # bytez models
-        elif model.startswith("bytez/"):
-            custom_llm_provider = "bytez"
-        elif model.startswith("lemonade/"):
-            custom_llm_provider = "lemonade"
-        elif model.startswith("heroku/"):
-            custom_llm_provider = "heroku"
-        # cometapi models
-        elif model.startswith("cometapi/"):
-            custom_llm_provider = "cometapi"
-        elif model.startswith("oci/"):
-            custom_llm_provider = "oci"
-        elif model.startswith("compactifai/"):
-            custom_llm_provider = "compactifai"
-        elif model.startswith("ovhcloud/"):
-            custom_llm_provider = "ovhcloud"
-        elif model.startswith("lemonade/"):
-            custom_llm_provider = "lemonade"
-        elif model.startswith("clarifai/"):
-            custom_llm_provider = "clarifai"
+        # Note: Provider-specific prefixes (bytez/, stepflow/, etc.) are now checked earlier
+        # to avoid false matches with model name patterns
         if not custom_llm_provider:
             if litellm.suppress_debug_info is False:
                 print()  # noqa
